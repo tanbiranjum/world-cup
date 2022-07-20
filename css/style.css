@@ -86,6 +86,7 @@ span {
   border-radius: 2rem;
   padding: 1rem 4rem 0 4rem;
   color: var(--font-color-primary);
+  margin-top: 2rem;
 }
 
 .hero > * {
@@ -135,7 +136,7 @@ span {
   padding: 16px;
   font-family: var(--font-family-heading);
   align-self: start;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .sidemenu__li-btn:not(:last-child) {
@@ -204,4 +205,39 @@ span {
 
 .card__icon {
   display: inline-block;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: var(--bg-color-primary);
+}
+
+.footer__title {
+  display: block;
+  text-align: center;
+  color: var(--font-color-primary);
+  font-size: 3rem;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--font-color-tartiary);
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+.footer-menu__link {
+  text-decoration: none;
+  color: #b9b9b9;
+  font-family: var(--font-family-body);
+}
+
+.footer-menu__link:hover {
+  color: var(--bg-color-secondary);
 }
