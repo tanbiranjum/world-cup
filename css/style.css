@@ -1,5 +1,6 @@
 @import url('match-style.css');
 
+/* CSS RESET */
 *,
 *::before,
 *::after {
@@ -46,6 +47,8 @@ h6 {
   overflow-wrap: break-word;
 }
 
+/* CSS VARIABLES */
+
 :root {
   --bg-color-primary: #0057a3;
   --bg-color-secondary: #02b544;
@@ -72,6 +75,7 @@ span {
   font-family: var(--font-family-body);
 }
 
+/* REUSABLE CLASS */
 .flex {
   display: flex;
 }
@@ -80,10 +84,24 @@ span {
   text-align: center;
 }
 
+.btn {
+  background-color: var(--bg-color-secondary);
+  border: none;
+  color: var(--font-color-primary);
+  padding: 8px 32px;
+  font-family: var(--font-family-heading);
+  border-radius: 4px;
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
 }
+
+/* HERO SECTION */
 
 .hero {
   display: flex;
@@ -125,18 +143,6 @@ span {
   transform: scale(0.9) translateY(4px);
 }
 
-.btn {
-  background-color: var(--bg-color-secondary);
-  border: none;
-  color: var(--font-color-primary);
-  padding: 8px 32px;
-  font-family: var(--font-family-heading);
-  border-radius: 4px;
-  display: flex;
-  align-items: baseline;
-  cursor: pointer;
-}
-
 .hero__img {
   height: 100%;
   width: 100%;
@@ -152,6 +158,7 @@ span {
   padding-top: 3rem;
 }
 
+/* SIDEMENU BUTTON SECTION */
 .sidemenu {
   background-color: var(--bg-color-primary);
   list-style: none;
@@ -179,6 +186,8 @@ span {
   background-color: var(--bg-color-secondary);
   color: var(--font-color-primary);
 }
+
+/* CARD SECTION */
 
 .cards {
   display: flex;
@@ -294,6 +303,8 @@ footer {
   font-size: 2rem;
 }
 
+/* ANIMATION */
+
 @keyframes text {
   0% {
     transform: translateY(32px);
@@ -326,6 +337,7 @@ footer {
   }
 }
 
+/* RESPONSIVE DESIGN */
 @media screen and (max-width: 992px) {
   .container {
     width: 90%;
