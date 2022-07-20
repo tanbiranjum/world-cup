@@ -108,11 +108,11 @@ span {
 
 .hero__text {
   padding-bottom: 16px;
+  animation: text 1s linear;
 }
 
 .hero__text-block {
   padding: 4rem 2rem 4rem 2rem;
-  /* align-self: center; */
 }
 
 .hero__btn {
@@ -226,6 +226,7 @@ span {
 
 .card__info {
   display: inline-flex;
+  gap: 4px;
 }
 
 .card__info {
@@ -325,6 +326,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     padding: 1rem 2rem 0 2rem;
@@ -388,7 +395,7 @@ footer {
 
 @media screen and (max-width: 576px) {
   .container {
-    width: 90%;
+    width: 95%;
   }
 
   .hero {
