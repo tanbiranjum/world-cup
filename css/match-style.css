@@ -1,0 +1,21 @@
+.card-inner-container {
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.card-inner-container > * {
+  padding: 0.3rem 0;
+}
+
+.card-flag-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.card__time {
+  font-size: 0.8rem;
+  color: #a2b5bb;
+}

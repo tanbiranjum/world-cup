@@ -1,3 +1,5 @@
+@import url('match-style.css');
+
 *,
 *::before,
 *::after {
@@ -101,6 +103,7 @@ span {
   font-size: 4rem;
   font-weight: 900;
   line-height: 1.2;
+  animation: text 1s linear;
 }
 
 .hero__text {
@@ -114,6 +117,12 @@ span {
 
 .hero__btn {
   gap: 8px;
+  transition: 0.2s all;
+  font-weight: 600;
+}
+
+.hero__btn:active {
+  transform: scale(0.9) translateY(4px);
 }
 
 .btn {
@@ -131,6 +140,7 @@ span {
 .hero__img {
   height: 100%;
   width: 100%;
+  animation: player 1s linear;
 }
 
 /* BLOG SECTION */
@@ -281,6 +291,38 @@ footer {
   text-decoration: none;
   color: var(--font-color-primary);
   font-size: 2rem;
+}
+
+@keyframes text {
+  0% {
+    transform: translateY(32px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes player {
+  0% {
+    transform: translateX(64px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
